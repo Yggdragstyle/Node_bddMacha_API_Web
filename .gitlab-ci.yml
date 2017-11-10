@@ -1,0 +1,9 @@
+image: ruby:2.4
+
+deploy:
+  stage: deploy
+  script:
+    - gem install dpl
+    - dpl --provider=heroku --app=mobile-courses-server --api-key=$HEROKU_API_KEY
+  only:
+    - master
