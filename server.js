@@ -21,7 +21,7 @@ function getCoursesFromFile(fileName, req) {
 
 /* Replaces 'localhost:8080' url with actual server url */
 function replaceUrl(data, req) {
-    var host = req.protocol + '://' + req.hostname + (port == 80 || port == 443 ? '' : ':' + port);
+    var host = req.protocol + '://' + req.hostname + (process.env.NODE_ENV == "production" || port == 80 || port == 443 ? '' : ':' + port);
     return data.replace(/http:\/\/localhost:8080/g, host);
 }
 
