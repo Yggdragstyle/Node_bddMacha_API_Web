@@ -2,15 +2,17 @@
 
 Mobile Courses Project for LP student at University of Nice Sophia Antipolis.
 
+## Install Node.js
+
+Go to (node.js site)[https://nodejs.org/] and download package for last version.
 
 ## Install Server
-
-Server is based on express framework.
 
 ```bash
 cd mobile-courses-server
 npm install
 ```
+Server is based on Express framework, that is why it is installed.
 
 ## Start server
 
