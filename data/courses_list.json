@@ -38,14 +38,14 @@
         "title": "Adaptateur de Liste de Données",
         "module": "Android",
         "time": 240,
-        "cover": "http://localhost:8080/assets/android_adapter-list.png"
+        "cover": "http://localhost:8080/assets/android-adapter-list.png"
     },
     {
         "id": "bbcee412-be64-4a0c-bf1e-315977acd924",
         "title": "Preference Utilisateur",
         "module": "Android",
         "time": 240,
-        "cover": "http://localhost:8080/assets/android_bdd.png"
+        "cover": "http://localhost:8080/assets/android-bdd.png"
     }
     ,
     {
