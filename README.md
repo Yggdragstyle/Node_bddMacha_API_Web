@@ -25,3 +25,6 @@ You can then access it through:
 ```
 http://localhost:8990/
 ```
+## Deployed on Heroku
+
+http://mobile-courses-server.herokuapp.com/courses
