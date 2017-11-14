@@ -3,7 +3,13 @@ var express = require('express');
 var app = express();
 
 app.set('port', process.env.PORT || 8990);
-app.use(express.static(__dirname + '/public'));
+
+var staticOptions = {
+  setHeaders: function (res, path, stat) {
+    res.header('Access-Control-Allow-Origin', '*')
+  }
+}
+app.use(express.static(__dirname + '/public', staticOptions));
 
 var port = app.get('port');
 var defaultCharset = 'utf8';
@@ -27,6 +33,7 @@ function replaceUrl(data, req) {
 
 /* courses List */
 app.get('/courses', function(req, res) {
+    res.header('Access-Control-Allow-Origin', '*');
     res.type('application/json; charset=' + defaultCharset);
     res.status(200).send(getCoursesFromFile('data/courses_list.json', req));
 });
