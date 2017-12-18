@@ -1,15 +1,45 @@
 <html>
-<body>
+	<head>
+		<meta charset="utf-8" />
+		<title>JSON Formater</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				
+				<h1>Welcome to mobile courses API.</h1>
+				<b><a href="http://localhost:8080/">HOST</a></b>
 
-<h1>Welcome to mobile courses API.</h1>
+			</header>
+			<section>
+				
+				<h2>Courses</h2>
+				
+				<h3>Return list of courses</h3>
+				<code>GET /courses</code>
+				<p>i.e.:</p>
+				<a href="http://localhost:8080/courses">http://localhost:8080/courses</a>
 
-HOST: http://localhost:8080/
+			</section>
+			<section>
+				
+				<h2>Resulta formater en jQuery</h2>
 
-<h2>Courses</h2>
-<h3>Return list of courses</h3>
-<code>GET /courses</code><br>
-<br>
-i.e.:<br>
-<a href="http://localhost:8080/courses">http://localhost:8080/courses</a><br>
-</body>
+				<ul id="resulta"></ul>
+
+			</section>
+			<footer>
+				<nav>
+					<a href="https://ygg.life">Yggdragstyle</a>
+					<a href="dans.la.com@gmail.com">contact me !</a>
+					<blockquote>Si Joseph d'Arimathie a pas été trop con, vous pouvez être sûr que le Graal, c'est un bocal à anchois.</blockquote>
+				</nav>
+			</footer>
+		</div>
+
+		<div id="header-bg"></div>
+	</body>
 </html>
